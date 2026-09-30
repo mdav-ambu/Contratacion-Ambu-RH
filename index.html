@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Documentación para ingreso · Ambu</title>
+  <meta name="description" content="Lista de documentos que debes presentar para tu ingreso a Ambu Americas Manufacturing.">
+  <meta name="theme-color" content="#C8102E">
+  <meta property="og:title" content="Documentación para ingreso · Ambu">
+  <meta property="og:description" content="¿Ya estás listo para formar parte de nuestro equipo? Revisa la lista de documentos que necesitas presentar.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23C8102E'/%3E%3Cpath d='M9 16.5l4.5 4.5L23 12' fill='none' stroke='%23fff' stroke-width='3.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+  <style>
+    /* ============================================================
+       COLORES — cambia estos valores para ajustar la marca
+       ============================================================ */
+    :root {
+      --red: #C8102E;        /* rojo corporativo (títulos, iconos, botones) */
+      --red-dark: #A00D25;   /* rojo al pasar el cursor */
+      --red-tint: #FDEDF0;   /* fondo rosado suave (avisos, elementos marcados) */
+      --red-line: #F3C2CB;   /* borde rosado (enfoque de teclado) */
+      --ink: #111111;        /* texto principal (negro) */
+      --muted: #5A5A5A;      /* texto secundario */
+      --line: #E7E7E7;       /* líneas divisorias */
+      --bg: #FFFFFF;         /* fondo de la página (blanco) */
+      --soft: #FAFAFA;       /* fondo al pasar el cursor */
+      --radius: 14px;
+    }
+
+    * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      font-size: 17px;
+      line-height: 1.5;
+    }
+    .wrap { max-width: 680px; margin: 0 auto; padding: 0 16px; }
+
+    /* ---------- Encabezado ---------- */
+    .topbar { background: #fff; border-bottom: 3px solid var(--red); }
+    .topbar .wrap { display: flex; align-items: center; gap: 12px; min-height: 60px; }
+    .brand { display: inline-flex; align-items: center; text-decoration: none; color: var(--red); }
+    .brand-mark { font-weight: 800; font-size: 1.65rem; letter-spacing: -0.02em; line-height: 1; }
+    .brand img { height: 30px; width: auto; display: block; }
+    .brand-sub { color: var(--muted); font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.1em; padding-left: 12px; border-left: 1px solid var(--line); line-height: 1.2; }
+
+    /* ---------- Presentación ---------- */
+    .hero { padding: 30px 0 18px; }
+    .kicker { color: var(--red); font-weight: 700; text-transform: uppercase; letter-spacing: 0.14em; font-size: 0.78rem; margin: 0 0 8px; }
+    h1 { font-size: clamp(1.9rem, 6.5vw, 2.7rem); line-height: 1.08; letter-spacing: -0.02em; margin: 0 0 14px; }
+    .lead { font-size: 1.06rem; color: #2B2B2B; margin: 0; }
+    .lead strong { color: var(--ink); }
+
+    /* ---------- Barra de avance (fija al hacer scroll) ---------- */
+    .progress {
+      position: sticky; top: 0; z-index: 5;
+      background: #fff;
+      padding: 10px 0 12px; margin: 8px 0 0;
+      border-bottom: 1px solid var(--line);
+    }
+    .progress-head { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+    .progress-text { font-weight: 700; font-size: 0.98rem; }
+    .progress.complete .progress-text { color: var(--red); }
+    .link-btn { appearance: none; background: none; border: 0; color: var(--muted); font: inherit; font-size: 0.88rem; text-decoration: underline; cursor: pointer; padding: 4px 0; white-space: nowrap; flex: none; }
+    .link-btn:hover { color: var(--red); }
+    .bar { height: 8px; background: #EFEFEF; border-radius: 999px; overflow: hidden; margin-top: 8px; }
+    .bar-fill { height: 100%; width: 0; background: var(--red); border-radius: 999px; transition: width 0.3s ease; }
+    .hint { margin: 10px 0 0; color: var(--muted); font-size: 0.85rem; }
+
+    /* ---------- Grupos de documentos ---------- */
+    .group { margin: 26px 0 0; }
+    .group-head { display: flex; align-items: center; gap: 10px; margin: 0 0 6px; }
+    .group-head svg { width: 26px; height: 26px; color: var(--red); flex: none; }
+    .group h2 { font-size: 1.12rem; text-transform: uppercase; letter-spacing: 0.05em; margin: 0; }
+    .group-sub { color: var(--muted); font-size: 0.92rem; margin: 0 0 12px 36px; }
+    .badge { display: inline-block; font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: var(--red); background: var(--red-tint); border: 1px solid var(--red-line); border-radius: 999px; padding: 2px 9px; margin-left: 6px; vertical-align: middle; }
+
+    .docs { list-style: none; margin: 0; padding: 0; border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; background: #fff; }
+    .docs li + li { border-top: 1px solid var(--line); }
+    .doc { display: flex; gap: 14px; align-items: flex-start; padding: 14px 16px; cursor: pointer; position: relative; -webkit-tap-highlight-color: transparent; transition: background 0.15s; }
+    .doc:hover { background: var(--soft); }
+    .doc.done { background: var(--red-tint); }
+    .doc input { position: absolute; opacity: 0; width: 1px; height: 1px; margin: 0; }
+    .check { flex: none; width: 26px; height: 26px; border: 2px solid var(--red); border-radius: 8px; margin-top: 1px; position: relative; background: #fff; transition: background 0.15s; }
+    .check::after {
+      content: ""; position: absolute; left: 7px; top: 2px; width: 7px; height: 13px;
+      border: solid #fff; border-width: 0 3px 3px 0;
+      transform: rotate(45deg) scale(0); transition: transform 0.15s;
+    }
+    .doc input:checked + .check { background: var(--red); }
+    .doc input:checked + .check::after { transform: rotate(45deg) scale(1); }
+    .doc input:focus-visible + .check { outline: 3px solid var(--red-line); outline-offset: 2px; }
+    .txt { flex: 1; min-width: 0; }
+    .txt strong { display: block; font-weight: 700; line-height: 1.35; }
+    .txt small { display: block; color: var(--muted); font-size: 0.92rem; margin-top: 3px; line-height: 1.4; }
+
+    /* ---------- Aviso importante ---------- */
+    .alert { border: 2px solid var(--red); border-radius: var(--radius); background: var(--red-tint); padding: 18px 18px 16px; margin: 30px 0 0; }
+    .alert h2 { color: var(--red); display: flex; align-items: center; gap: 8px; font-size: 1.05rem; text-transform: uppercase; letter-spacing: 0.06em; margin: 0 0 10px; }
+    .alert h2 svg { width: 24px; height: 24px; flex: none; }
+    .alert p { margin: 0 0 8px; }
+    .alert p:last-child { margin-bottom: 0; }
+
+    /* ---------- Cierre ---------- */
+    .closing { text-align: center; padding: 34px 0 30px; }
+    .closing p { margin: 0 0 18px; color: var(--muted); }
+    .closing .bye { font-size: 1.7rem; font-weight: 800; color: var(--red); margin: 0 0 6px; letter-spacing: -0.01em; }
+    .actions { display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; }
+    .btn { appearance: none; border: 2px solid var(--red); background: #fff; color: var(--red); font: inherit; font-weight: 700; font-size: 0.95rem; padding: 10px 20px; border-radius: 999px; cursor: pointer; display: inline-flex; align-items: center; gap: 8px; transition: background 0.15s, color 0.15s, border-color 0.15s; }
+    .btn svg { width: 18px; height: 18px; }
+    .btn:hover { background: var(--red-tint); }
+    .btn.primary { background: var(--red); color: #fff; }
+    .btn.primary:hover { background: var(--red-dark); border-color: var(--red-dark); }
+    .btn:focus-visible { outline: 3px solid var(--red-line); outline-offset: 2px; }
+    footer { border-top: 1px solid var(--line); padding: 18px 16px 28px; text-align: center; color: var(--muted); font-size: 0.85rem; }
+
+    @media (prefers-reduced-motion: reduce) { *, *::before, *::after { transition: none !important; } }
+
+    /* ---------- Impresión ---------- */
+    @media print {
+      .progress, .actions, .hint, .link-btn { display: none !important; }
+      .doc.done { background: none; }
+      .topbar { border-bottom-width: 2px; }
+      body { font-size: 12pt; }
+      .docs, .alert { break-inside: avoid; }
+      .closing { padding-top: 16px; }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="topbar">
+    <div class="wrap">
+      <!-- LOGO: para usar el logotipo oficial, sube el archivo (p. ej. logo.svg) junto a este index.html
+           y sustituye la línea <span class="brand-mark">Ambu</span> por:
+           <img src="logo.svg" alt="Ambu"> -->
+      <a class="brand" href="#top" aria-label="Ambu">
+        <span class="brand-mark">Ambu</span>
+      </a>
+      <span class="brand-sub">Americas<br>Manufacturing</span>
+    </div>
+  </header>
+
+  <main class="wrap" id="top">
+
+    <section class="hero">
+      <p class="kicker">Reclutamiento</p>
+      <h1>¡Documentación para ingreso!</h1>
+      <p class="lead">¿Ya estás listo para formar parte de nuestro equipo? Antes de presentarte, asegúrate de contar con la siguiente documentación.</p>
+    </section>
+
+    <div class="progress" id="progress">
+      <div class="progress-head">
+        <span class="progress-text" id="progress-text" aria-live="polite">0 de 8 documentos obligatorios</span>
+        <button class="link-btn" id="reset" type="button">Reiniciar</button>
+      </div>
+      <div class="bar" role="progressbar" aria-labelledby="progress-text" aria-valuemin="0" aria-valuemax="8" aria-valuenow="0" id="bar">
+        <div class="bar-fill" id="bar-fill"></div>
+      </div>
+    </div>
+    <p class="hint">Marca cada documento conforme lo tengas listo. Tu avance se guarda en este dispositivo.</p>
+
+    <!-- ===================== DOCUMENTOS OBLIGATORIOS ===================== -->
+    <section class="group" aria-labelledby="h-obligatorios">
+      <div class="group-head">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5"/><path d="M9 13h6M9 17h6"/>
+        </svg>
+        <h2 id="h-obligatorios">Documentos obligatorios</h2>
+      </div>
+      <p class="group-sub">Todos son indispensables para tu ingreso.</p>
+      <ul class="docs">
+        <li><label class="doc"><input type="checkbox" data-doc="acta" data-required><span class="check" aria-hidden="true"></span><span class="txt"><strong>Acta de nacimiento</strong></span></label></li>
+        <li><label class="doc"><input type="checkbox" data-doc="ine" data-required><span class="check" aria-hidden="true"></span><span class="txt"><strong>INE vigente</strong></span></label></li>
+        <li><label class="doc"><input type="checkbox" data-doc="curp" data-required><span class="check" aria-hidden="true"></span><span class="txt"><strong>CURP</strong></span></label></li>
+        <li><label class="doc"><input type="checkbox" data-doc="domicilio" data-required><span class="check" aria-hidden="true"></span><span class="txt"><strong>Comprobante de domicilio</strong><small>Luz o agua, con antigüedad no mayor a 3 meses.</small></span></label></li>
+        <li><label class="doc"><input type="checkbox" data-doc="estudios" data-required><span class="check" aria-hidden="true"></span><span class="txt"><strong>Comprobante de estudios</strong><small>Mínimo secundaria terminada.</small></span></label></li>
+        <li><label class="doc"><input type="checkbox" data-doc="nss" data-required><span class="check" aria-hidden="true"></span><span class="txt"><strong>Número de Seguridad Social (NSS)</strong><small>Documento expedido por el IMSS donde aparezca tu NSS.</small></span></label></li>
+        <li><label class="doc"><input type="checkbox" data-doc="sat" data-required><span class="check" aria-hidden="true"></span><span class="txt"><strong>Constancia de Situación Fiscal (SAT)</strong><small>Con fecha reciente.</small></span></label></li>
+        <li><label class="doc"><input type="checkbox" data-doc="semanas" data-required><span class="check" aria-hidden="true"></span><span class="txt"><strong>Semanas cotizadas del IMSS</strong></span></label></li>
+      </ul>
+    </section>
+
+    <!-- ===================== EN CASO DE CRÉDITO ===================== -->
+    <section class="group" aria-labelledby="h-credito">
+      <div class="group-head">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M3 11l9-8 9 8"/><path d="M5 10v10h14V10"/><path d="M10 20v-6h4v6"/>
+        </svg>
+        <h2 id="h-credito">En caso de contar con crédito <span class="badge">Solo si aplica</span></h2>
+      </div>
+      <p class="group-sub">Preséntalos únicamente si tienes un crédito activo.</p>
+      <ul class="docs">
+        <li><label class="doc"><input type="checkbox" data-doc="infonavit"><span class="check" aria-hidden="true"></span><span class="txt"><strong>Carta de retención INFONAVIT</strong></span></label></li>
+        <li><label class="doc"><input type="checkbox" data-doc="fonacot"><span class="check" aria-hidden="true"></span><span class="txt"><strong>Carta de FONACOT</strong></span></label></li>
+      </ul>
+    </section>
+
+    <!-- ===================== DOCUMENTO ADICIONAL ===================== -->
+    <section class="group" aria-labelledby="h-adicional">
+      <div class="group-head">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M12 3v18"/><path d="M5 7h14"/><path d="M3 15l2.5-8 2.5 8a2.5 2.5 0 0 1-5 0z"/><path d="M16 15l2.5-8 2.5 8a2.5 2.5 0 0 1-5 0z"/><path d="M8 21h8"/>
+        </svg>
+        <h2 id="h-adicional">Documento adicional</h2>
+      </div>
+      <ul class="docs" style="margin-top:12px">
+        <li><label class="doc"><input type="checkbox" data-doc="antecedentes"><span class="check" aria-hidden="true"></span><span class="txt"><strong>Carta de No Antecedentes Penales</strong></span></label></li>
+      </ul>
+    </section>
+
+    <!-- ===================== IMPORTANTE ===================== -->
+    <section class="alert" aria-labelledby="h-importante">
+      <h2 id="h-importante">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M12 3L2 20h20z"/><path d="M12 9v5"/><circle cx="12" cy="17" r="1" fill="currentColor" stroke="none"/>
+        </svg>
+        ¡Importante!
+      </h2>
+      <p>Preséntate con <strong>documentos originales y copias</strong> de toda la documentación solicitada.</p>
+      <p>Te recomendamos revisar que todos tus documentos estén <strong>vigentes y legibles</strong> antes de acudir.</p>
+    </section>
+
+    <section class="closing">
+      <p class="bye">¡Te esperamos!</p>
+      <p>Guarda o comparte esta lista para no olvidar nada.</p>
+      <div class="actions">
+        <button class="btn primary" type="button" id="share">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>
+          <span id="share-label">Compartir</span>
+        </button>
+        <button class="btn" type="button" id="print">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9V3h12v6"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><path d="M6 14h12v7H6z"/></svg>
+          Imprimir / Guardar PDF
+        </button>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    Ambu Americas Manufacturing · Recursos Humanos
+  </footer>
+
+  <script>
+    (function () {
+      var KEY = 'ambu-documentacion-ingreso-v1';
+      var boxes = [].slice.call(document.querySelectorAll('input[type="checkbox"][data-doc]'));
+      var required = boxes.filter(function (b) { return b.hasAttribute('data-required'); });
+      var progress = document.getElementById('progress');
+      var text = document.getElementById('progress-text');
+      var bar = document.getElementById('bar');
+      var fill = document.getElementById('bar-fill');
+
+      // El avance se guarda en el dispositivo del candidato (si el navegador lo permite).
+      function load() {
+        try {
+          var saved = JSON.parse(localStorage.getItem(KEY) || '{}');
+          boxes.forEach(function (b) { b.checked = !!saved[b.getAttribute('data-doc')]; });
+        } catch (e) { /* sin almacenamiento: la lista funciona igual, solo no se recuerda */ }
+      }
+      function save() {
+        try {
+          var s = {};
+          boxes.forEach(function (b) { if (b.checked) { s[b.getAttribute('data-doc')] = 1; } });
+          localStorage.setItem(KEY, JSON.stringify(s));
+        } catch (e) { /* ignorar */ }
+      }
+      function render() {
+        var done = required.filter(function (b) { return b.checked; }).length;
+        var total = required.length;
+        boxes.forEach(function (b) { b.closest('.doc').classList.toggle('done', b.checked); });
+        fill.style.width = (done / total * 100) + '%';
+        bar.setAttribute('aria-valuenow', done);
+        if (done === total) {
+          text.textContent = '¡Listo! Tienes los ' + total + ' documentos obligatorios';
+          progress.classList.add('complete');
+        } else {
+          text.textContent = done + ' de ' + total + ' documentos obligatorios';
+          progress.classList.remove('complete');
+        }
+      }
+
+      boxes.forEach(function (b) { b.addEventListener('change', function () { save(); render(); }); });
+
+      document.getElementById('reset').addEventListener('click', function () {
+        boxes.forEach(function (b) { b.checked = false; });
+        save(); render();
+      });
+
+      document.getElementById('print').addEventListener('click', function () { window.print(); });
+
+      // Compartir: usa el menú nativo del teléfono; si no existe, copia el enlace.
+      var shareBtn = document.getElementById('share');
+      var shareLabel = document.getElementById('share-label');
+      shareBtn.addEventListener('click', function () {
+        var data = { title: document.title, text: 'Documentación para ingreso · Ambu', url: location.href };
+        if (navigator.share) {
+          navigator.share(data).catch(function () {});
+        } else if (navigator.clipboard) {
+          navigator.clipboard.writeText(location.href).then(function () {
+            shareLabel.textContent = 'Enlace copiado';
+            setTimeout(function () { shareLabel.textContent = 'Compartir'; }, 2000);
+          }).catch(function () {});
+        }
+      });
+
+      load();
+      render();
+    })();
+  </script>
+</body>
+</html>
